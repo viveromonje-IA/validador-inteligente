@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-09-23T04:12:14.934067",
+  "titulo": "Dashboard: Mejora en Tasa de Ã‰xito",
+  "descripcion": "Muestra cÃ³mo mejora la tasa de Ã©xito del validador con aprendizaje continuo a lo largo de 8 semanas",
+  "datos": {
+    "semanas": [
+      "2026-09-01",
+      "2026-09-08",
+      "2026-09-15",
+      "2026-09-22",
+      "2026-09-29",
+      "2026-10-06",
+      "2026-10-13",
+      "2026-10-20"
+    ],
+    "tasas_exito": [
+      60.6,
+      65.2,
+      70.8,
+      75.4,
+      80.1,
+      83.7,
+      86.9,
+      89.5
+    ],
+    "registros_procesados": [
+      500,
+      650,
+      820,
+      1050,
+      1300,
+      1580,
+      1890,
+      2200
+    ]
+  },
+  "metricas": {
+    "tasa_inicial": 60.6,
+    "tasa_final": 89.5,
+    "mejora_absoluta": 28.9,
+    "mejora_relativa": 47.68976897689768,
+    "total_registros": 9990,
+    "promedio_registros_semanal": 1248.75
+  }
+}
