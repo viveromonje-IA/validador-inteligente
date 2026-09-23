@@ -13,7 +13,7 @@
 
 Sistema que valida, clasifica y registra trazabilidad de datos de clientes con aprendizaje automático y validación externa. Diseñado para PYMES y consultoras que reciben leads desde múltiples fuentes (web, WhatsApp, email, eventos) y necesitan limpiar, validar y auditar datos antes de ingresarlos al CRM.
 
-**Hipótesis confirmada:** Sí es posible generar ingresos con soluciones de este tipo, aún sin experiencia industrial previa en automatización comercial.
+**Hipótesis confirmada:** Sí es posible generar soluciones de este tipo, aplicando la experiencia previa en resolución de problemas sobre áreas diversas de la automatización comercial.
 
 ---
 
@@ -26,8 +26,8 @@ Sistema que valida, clasifica y registra trazabilidad de datos de clientes con a
 - **Registro paralelo de errores del sistema** para refinamiento
 - **Bitácora de auditoría completa** con trazabilidad de cada decisión
 - **Detección de duplicados con cruce de fuentes**
-- **Unificación de registros con metadata** (ej: número real de WhatsApp)
-- **Escalabilidad probada a 500+ registros** sin colapsar
+- **Unificación de registros con metadata** (ej: número de WhatsApp)
+- **Escalabilidad probada a 500+ registros** sin colapsar y ampliable.
 
 ---
 
@@ -36,7 +36,7 @@ Sistema que valida, clasifica y registra trazabilidad de datos de clientes con a
 ### Volumen probado
 - **500+ registros** generados y procesados
 - **Tasa de éxito inicial:** 60.6% (303/500 sin errores)
-- **Tasa de mejora esperada:** 80-90% en 2-3 meses de uso en producción
+- **Tasa de mejora esperada:** 80-90% en 2-3 meses de uso / producción
 
 ### Errores detectados (top 3)
 1. `telefono_sin_codigo_pais`: 116 (23% de registros)
@@ -158,10 +158,10 @@ validador-inteligente/
 - Bitácora de auditoría JSON/CSV
 - Documentación básica
 
-#### Versión Pro (futura)
-**Precio:** USD 2000-5000 (licencia + soporte anual)
+#### Versión Pro ()
+**Precio:** desde USD 2000-5000 (licencia + soporte anual)
 
-**Incluiría:**
+**Incluye:**
 - Todo lo del MVP
 - Validación de hasta 10000 registros/mes
 - 25+ tipos de errores
@@ -170,17 +170,17 @@ validador-inteligente/
 - Integración con CRMs (HubSpot, Salesforce)
 - Soporte técnico 6 meses
 
-#### Versión Enterprise (futura)
+#### Versión Enterprise ()
 **Precio:** USD 10000+ (personalizado)
 
-**Incluiría:**
+**Incluye:**
 - Todo lo de Pro
 - Registros ilimitados
 - Personalización de reglas de negocio
 - Entrenamiento con datos del cliente
 - Integración con sistemas legacy
 - Soporte técnico 12 meses
-- Capacitación in-situ
+- Capacitación on-line
 
 ### Servicios Adicionales
 
@@ -196,7 +196,7 @@ validador-inteligente/
 
 ### 1. Validación de leads entrantes
 **Descripción:** Validar automáticamente leads que ingresan desde web, WhatsApp, email y eventos  
-**Beneficio:** Reduce 60% de errores de carga manual, detecta duplicados antes de que lleguen al CRM
+**Beneficio:** Reduce desde el inicio 60% de errores de carga manual, detecta duplicados antes de que lleguen al CRM
 
 ### 2. Limpieza de base de datos existente
 **Descripción:** Procesar base de datos histórica para detectar errores, duplicados y datos incompletos  
@@ -227,7 +227,7 @@ validador-inteligente/
 - ⏳ Validación de dominios real (API gratuita)
 - ⏳ Documentación en inglés
 
-### Versión 2.0 (3-6 meses)
+### Versión 2.0 (3 meses)
 - 🔜 Dashboard web completo
 - 🔜 Múltiples CRMs (Salesforce, Pipedrive)
 - 🔜 APIs de LinkedIn/Google reales
@@ -267,17 +267,17 @@ Este software es propiedad intelectual del autor. Su uso está sujeto a los tér
 
 **Autor:** Desarrollador independiente  
 **Ubicación:** Santa Fe, Argentina  
-**Email:** [tu-email@ejemplo.com]  
+**Email:** [viveromonje@gmail.com]  
 **LinkedIn:** [tu-perfil]  
-**GitHub:** [tu-usuario]
+**GitHub:** [viveromonje-IA]
 
 ---
 
 ## 🙏 Agradecimientos
 
-Este proyecto surgió como hipótesis experimental del proyecto IACV (Sistema homeostático de aprendizaje artificial), inicialmente para resolver un problema personal. La motivación no era comercial, sino demostrar que la habilidad de resolver problemas complejos puede aplicarse a áreas rentables.
+Este proyecto surgió como hipótesis experimental del proyecto IACV (Sistema homeostático de aprendizaje artificial), inicialmente para resolver un problema personal. La motivación no era comercial, sino demostrar que la habilidad de resolver problemas complejos es aplicable en otras áreas.
 
-**Hipótesis confirmada:** Sí es posible generar ingresos alternativos produciendo soluciones de este tipo, partiendo de habilidades de resolución de problemas y formalización de soluciones.
+**Hipótesis confirmada:** Las herramientas de automatización disponibles hoy en día permiten generar soluciones reales y verificables de bajos recursos, partiendo de habilidades en resolución de problemas y formalización de soluciones.
 
 ---
 
