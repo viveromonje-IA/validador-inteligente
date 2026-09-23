@@ -1,0 +1,381 @@
+{
+  "timestamp": "2026-09-23T00:28:24.704865",
+  "titulo": "Demo: Validador Inteligente de Datos",
+  "registros_procesados": 5,
+  "registros_validos": 3,
+  "registros_con_errores": 2,
+  "resultados_detallados": [
+    {
+      "registro_id": "DEMO-001",
+      "fuente": "web_form",
+      "resultados": {
+        "nombre": {
+          "campo": "nombre",
+          "valor": "Carlos Mendoza",
+          "area": "identidad",
+          "es_valido": true,
+          "errores": [],
+          "sugerencias": [],
+          "accion": "ninguna",
+          "confianza": 1.0,
+          "validacion_externa": null
+        },
+        "email": {
+          "campo": "email",
+          "valor": "cmendoza@alimentosdelsur.com",
+          "area": "contacto_digital",
+          "es_valido": true,
+          "errores": [],
+          "sugerencias": [],
+          "accion": "ninguna",
+          "confianza": 1.0,
+          "validacion_externa": {
+            "valido": true,
+            "tipo": "corporativo",
+            "dominio": "alimentosdelsur.com"
+          }
+        },
+        "telefono": {
+          "campo": "telefono",
+          "valor": "+5491155555555",
+          "area": "contacto_telefonico",
+          "es_valido": true,
+          "errores": [],
+          "sugerencias": [],
+          "accion": "ninguna",
+          "confianza": 1.0,
+          "validacion_externa": null
+        },
+        "empresa": {
+          "campo": "empresa",
+          "valor": "Alimentos del Sur S.A.",
+          "area": "datos_corporativos",
+          "es_valido": true,
+          "errores": [],
+          "sugerencias": [],
+          "accion": "ninguna",
+          "confianza": 1.0,
+          "validacion_externa": {
+            "existe": true,
+            "nombre_oficial": "Alimentos Del Sur",
+            "dominio": "alimentosdelsur.com",
+            "pais": "AR"
+          }
+        },
+        "cargo": {
+          "campo": "cargo",
+          "valor": "Gerente de Compras",
+          "area": "datos_laborales",
+          "es_valido": true,
+          "errores": [],
+          "sugerencias": [],
+          "accion": "ninguna",
+          "confianza": 1.0,
+          "validacion_externa": null
+        }
+      },
+      "todos_validos": true
+    },
+    {
+      "registro_id": "DEMO-002",
+      "fuente": "whatsapp",
+      "resultados": {
+        "nombre": {
+          "campo": "nombre",
+          "valor": "Juan Pérez",
+          "area": "identidad",
+          "es_valido": true,
+          "errores": [],
+          "sugerencias": [],
+          "accion": "ninguna",
+          "confianza": 1.0,
+          "validacion_externa": null
+        },
+        "email": {
+          "campo": "email",
+          "valor": "jperez@gamil.com",
+          "area": "contacto_digital",
+          "es_valido": false,
+          "errores": [
+            "email_typo_dominio_comun"
+          ],
+          "sugerencias": [
+            "Typo detectado: gamil.com -> gmail.com"
+          ],
+          "accion": "sugerir_correccion_sintaxis",
+          "confianza": 0.8,
+          "validacion_externa": {
+            "valido": true,
+            "tipo": "corporativo",
+            "dominio": "gamil.com"
+          }
+        },
+        "telefono": {
+          "campo": "telefono",
+          "valor": "1155555555",
+          "area": "contacto_telefonico",
+          "es_valido": false,
+          "errores": [
+            "telefono_sin_codigo_pais"
+          ],
+          "sugerencias": [
+            "Agregar código de país (+54 para Argentina)"
+          ],
+          "accion": "sugerir_llamada_corroboracion",
+          "confianza": 0.6,
+          "validacion_externa": null
+        },
+        "empresa": {
+          "campo": "empresa",
+          "valor": "TechCorp S.A.",
+          "area": "datos_corporativos",
+          "es_valido": true,
+          "errores": [],
+          "sugerencias": [],
+          "accion": "ninguna",
+          "confianza": 1.0,
+          "validacion_externa": {
+            "existe": true,
+            "nombre_oficial": "Techcorp",
+            "dominio": "techcorp.com",
+            "pais": "AR"
+          }
+        },
+        "cargo": {
+          "campo": "cargo",
+          "valor": "Director",
+          "area": "datos_laborales",
+          "es_valido": true,
+          "errores": [],
+          "sugerencias": [],
+          "accion": "ninguna",
+          "confianza": 1.0,
+          "validacion_externa": null
+        }
+      },
+      "todos_validos": false
+    },
+    {
+      "registro_id": "DEMO-003",
+      "fuente": "excel_eventos",
+      "resultados": {
+        "nombre": {
+          "campo": "nombre",
+          "valor": "Maria Gonzalez",
+          "area": "identidad",
+          "es_valido": true,
+          "errores": [],
+          "sugerencias": [],
+          "accion": "ninguna",
+          "confianza": 1.0,
+          "validacion_externa": null
+        },
+        "email": {
+          "campo": "email",
+          "valor": "maria@empresainexistente.xyz",
+          "area": "contacto_digital",
+          "es_valido": false,
+          "errores": [
+            "dominio_email_invalido_externo"
+          ],
+          "sugerencias": [
+            "Dominio inválido: dominio_sospechoso"
+          ],
+          "accion": "validacion_externa_fallo",
+          "confianza": 0.3,
+          "validacion_externa": {
+            "valido": false,
+            "motivo": "dominio_sospechoso"
+          }
+        },
+        "telefono": {
+          "campo": "telefono",
+          "valor": "+5493514445566",
+          "area": "contacto_telefonico",
+          "es_valido": true,
+          "errores": [],
+          "sugerencias": [],
+          "accion": "ninguna",
+          "confianza": 1.0,
+          "validacion_externa": null
+        },
+        "empresa": {
+          "campo": "empresa",
+          "valor": "Empresa Inexistente XYZ",
+          "area": "datos_corporativos",
+          "es_valido": false,
+          "errores": [
+            "empresa_no_existe_externo"
+          ],
+          "sugerencias": [
+            "Empresa no encontrada: "
+          ],
+          "accion": "validacion_externa_fallo",
+          "confianza": 0.3,
+          "validacion_externa": {
+            "existe": false,
+            "nombre_oficial": "Empresa Inexistente",
+            "dominio": null,
+            "pais": null
+          }
+        },
+        "cargo": {
+          "campo": "cargo",
+          "valor": "Ventas y Distrubucion",
+          "area": "datos_laborales",
+          "es_valido": true,
+          "errores": [
+            "autocorrector_intruso_ortografia_cargo"
+          ],
+          "sugerencias": [],
+          "accion": "corregir_automatico",
+          "confianza": 0.85,
+          "validacion_externa": null
+        }
+      },
+      "todos_validos": false
+    },
+    {
+      "registro_id": "DEMO-004",
+      "fuente": "web_form_movil",
+      "resultados": {
+        "nombre": {
+          "campo": "nombre",
+          "valor": "Ana Rodriguez",
+          "area": "identidad",
+          "es_valido": true,
+          "errores": [],
+          "sugerencias": [],
+          "accion": "ninguna",
+          "confianza": 1.0,
+          "validacion_externa": null
+        },
+        "email": {
+          "campo": "email",
+          "valor": "ana@logisticsur.com",
+          "area": "contacto_digital",
+          "es_valido": true,
+          "errores": [],
+          "sugerencias": [],
+          "accion": "ninguna",
+          "confianza": 1.0,
+          "validacion_externa": {
+            "valido": true,
+            "tipo": "corporativo",
+            "dominio": "logisticsur.com"
+          }
+        },
+        "telefono": {
+          "campo": "telefono",
+          "valor": "+5491144332211",
+          "area": "contacto_telefonico",
+          "es_valido": true,
+          "errores": [],
+          "sugerencias": [],
+          "accion": "ninguna",
+          "confianza": 1.0,
+          "validacion_externa": null
+        },
+        "empresa": {
+          "campo": "empresa",
+          "valor": "Logistic Sur S.A.",
+          "area": "datos_corporativos",
+          "es_valido": true,
+          "errores": [],
+          "sugerencias": [],
+          "accion": "ninguna",
+          "confianza": 1.0,
+          "validacion_externa": {
+            "existe": true,
+            "nombre_oficial": "Logistic Sur",
+            "dominio": "logisticsur.com",
+            "pais": "AR"
+          }
+        },
+        "cargo": {
+          "campo": "cargo",
+          "valor": "Gerente de Compras",
+          "area": "datos_laborales",
+          "es_valido": true,
+          "errores": [],
+          "sugerencias": [],
+          "accion": "ninguna",
+          "confianza": 1.0,
+          "validacion_externa": null
+        }
+      },
+      "todos_validos": true
+    },
+    {
+      "registro_id": "DEMO-005",
+      "fuente": "linkedin",
+      "resultados": {
+        "nombre": {
+          "campo": "nombre",
+          "valor": "Diego Torres",
+          "area": "identidad",
+          "es_valido": true,
+          "errores": [],
+          "sugerencias": [],
+          "accion": "ninguna",
+          "confianza": 1.0,
+          "validacion_externa": null
+        },
+        "email": {
+          "campo": "email",
+          "valor": "diego@chileimport.cl",
+          "area": "contacto_digital",
+          "es_valido": true,
+          "errores": [],
+          "sugerencias": [],
+          "accion": "ninguna",
+          "confianza": 1.0,
+          "validacion_externa": {
+            "valido": true,
+            "tipo": "corporativo",
+            "dominio": "chileimport.cl"
+          }
+        },
+        "telefono": {
+          "campo": "telefono",
+          "valor": "+56922334455",
+          "area": "contacto_telefonico",
+          "es_valido": true,
+          "errores": [],
+          "sugerencias": [],
+          "accion": "ninguna",
+          "confianza": 1.0,
+          "validacion_externa": null
+        },
+        "empresa": {
+          "campo": "empresa",
+          "valor": "Chile Import Ltda",
+          "area": "datos_corporativos",
+          "es_valido": true,
+          "errores": [],
+          "sugerencias": [],
+          "accion": "ninguna",
+          "confianza": 1.0,
+          "validacion_externa": {
+            "existe": true,
+            "nombre_oficial": "Chile Import",
+            "dominio": "chileimport.cl",
+            "pais": "CL"
+          }
+        },
+        "cargo": {
+          "campo": "cargo",
+          "valor": "Director Ejecutivo",
+          "area": "datos_laborales",
+          "es_valido": true,
+          "errores": [],
+          "sugerencias": [],
+          "accion": "ninguna",
+          "confianza": 1.0,
+          "validacion_externa": null
+        }
+      },
+      "todos_validos": true
+    }
+  ]
+}
