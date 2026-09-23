@@ -1,0 +1,50 @@
+
+validador-inteligente/
+│
+├── README.md                           # Descripción completa del proyecto
+├── LICENSE                             # Licencia comercial
+├── .gitignore                          # Archivos a ignorar en Git
+│
+├── src/                                # Código fuente
+│   ├── __init__.py
+│   ├── validador.py                    # Módulo principal
+│   ├── validacion_externa.py           # Validación con fuentes externas
+│   ├── memoria_errores.py              # Memoria y aprendizaje
+│   └── bitacora_auditoria.py           # Auditoría y trazabilidad
+│
+├── demo/                               # Demos y ejemplos
+│   ├── validador_demo.py               # Demo interactivo (este archivo)
+│   ├── demo_interactivo.py             # Demo alternativo
+│   ├── dashboard_simple.py             # Dashboard de mejora
+│   └── datos_ejemplo/                  # Datos de ejemplo
+│       ├── registros_demo.json
+│       └── empresas_conocidas.json
+│
+├── resultados/                         # Resultados de pruebas
+│   ├── demo_resultados.json            # Resultados del demo
+│   ├── demo_interactivo_resultados.json
+│   ├── dashboard_mejora_tiempo.json
+│   ├── dashboard_mejora_tiempo.png
+│   └── resultados_500_refinados.json
+│
+├── tests/                              # Pruebas unitarias
+│   ├── __init__.py
+│   ├── test_validador.py
+│   ├── test_validacion_externa.py
+│   └── test_memoria_errores.py
+│
+├── docs/                               # Documentación
+│   ├── informe_ejecutivo_completo.md   # Informe ejecutivo
+│   ├── guia_uso.md                     # Guía de uso detallada
+│   ├── api_reference.md                # Referencia de API
+│   └── changelog.md                    # Historial de cambios
+│
+├── scripts/                            # Scripts utilitarios
+│   ├── generar_reporte.py              # Generar reportes automáticos
+│   ├── exportar_csv.py                 # Exportar resultados a CSV
+│   └── limpiar_datos.py                # Limpieza de datos previa
+│
+└── ejemplos/                           # Ejemplos de uso real
+    ├── ejemplo_basico.py
+    ├── ejemplo_avanzado.py
+    └── ejemplo_integracion_hubspot.py
