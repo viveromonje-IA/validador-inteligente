@@ -1,8 +1,8 @@
 # src/
 
-CÃ³digo fuente del validador.
+Código fuente del validador.
 
-- `validador.py`: MÃ³dulo principal
-- `validacion_externa.py`: ValidaciÃ³n con fuentes externas
+- `validador.py`: Módulo principal
+- `validacion_externa.py`: Validación con fuentes externas
 - `memoria_errores.py`: Memoria y aprendizaje
-- `bitacora_auditoria.py`: AuditorÃ­a y trazabilidad
+- `bitacora_auditoria.py`: Auditoría y trazabilidad
