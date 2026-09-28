@@ -23,6 +23,20 @@ No es un limpiador de datos a ciegas. Valida, propone correcciones y deja cada d
 | **Leads / contactos** (demo en este repositorio) | Higiene multi-fuente antes del CRM |
 | **Conciliación banco–ledger** | Match anclado (monto + cuenta + fecha), agrupados, excepciones tipadas |
 
+## Evidencia — conciliación banco–ledger (benchmark público)
+
+Dataset: BenchRec cash reconciliation (Kaggle, CC BY 4.0) · \~32.000 movimientos banco.
+
+| Señal | Resultado |
+|-------|-----------|
+| Match con **anclas** (monto + cuenta + fecha) | Tasa de match anclado **98,3 %** |
+| Cuando marca **alta confianza** | Alineación \~**97 %** con la solución de referencia (overlap ≥ 0,5) |
+| Agrupados 1→N (suma de partes) | \~**96,5 %** alineación ≥ 0,5 |
+| Sin anclas suficientes | **No** se etiqueta como match → excepción auditable |
+| Principio | Solo lectura — no modifica orígenes |
+
+Detalle reproducible: ver `docs/desempeno_conciliacion_v2.5.md`
+
 ## Prueba sin costo
 
 1. Enviá un CSV **anonimizado** y parámetros de referencia.
@@ -41,18 +55,15 @@ python demo_interactivo.py
 ## 📁 Estructura del Proyecto
 
 validador-inteligente/
-├── README.md                    # Este archivo
-├── LICENSE                      # Licencia comercial
-├── validador.py                 # Módulo principal
-├── validacion_externa.py        # Validación con fuentes externas
-├── memoria_errores.py           # Memoria y aprendizaje
-├── bitacora_auditoria.py        # Auditoría y trazabilidad
-├── demo_interactivo.py          # Demo interactivo
-├── demo_interactivo_resultados.json  # Resultados del demo
-├── informe_ejecutivo_completo.md     # Informe ejecutivo completo
-└── tests/                       # Pruebas unitarias
-    ├── test_validador.py
-    └── test_validacion_externa.py
+├── README.md
+├── LICENSE
+├── demo/                 # demo interactivo y muestras
+├── docs/                 # informes y desempeño (incl. conciliacion resumen)
+├── ejemplos/
+├── resultados/           # salidas de demo (JSON pequeños)
+├── scripts/
+├── src/                  # código del validador de leads (demo)
+└── tests/
 
 
 ## 🤝 Contribución
