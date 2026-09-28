@@ -50,7 +50,7 @@ Detalle reproducible: ver `docs/desempeno_conciliacion_v2.5.md`
 
 git clone https://github.com/viveromonje-IA/validador-inteligente.git
 cd validador-inteligente
-python demo_interactivo.py
+python validador_demo.py
 
 ## 📁 Estructura del Proyecto
 
